@@ -1,0 +1,142 @@
+/* Reset padrão */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para o contêiner principal do formulário */
+#form-body {
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Estilo para o botão do formulário */
+#form-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#form-button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para o título do formulário */
+#form-h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o formulário */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Estilo para as etiquetas do formulário */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Estilo para os campos de entrada do formulário */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Estilo para a seção de detalhes do produto */
+#product-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* Estilo para o contêiner do produto */
+#product-details .container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para a seção de imagem do produto */
+#product-image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+/* Estilo para a seção de informações do produto */
+#product-info {
+  flex: 1 1 auto;
+}
+
+/* Estilo para o título do produto */
+#product-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o texto descritivo do produto */
+#product-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Estilo para a lista de informações do produto */
+#info-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo para o link de características */
+#characteristics-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: blue;
+}
+
+/* Estilo para o botão de compra */
+#store-buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#store-buy-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para o botão de busca */
+#btn-search {
+  height: 40px;
+}
+
+/* Estilo para o botão de login */
+#login-button {
+  background-color: #ccc;
+}

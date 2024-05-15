@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+<body id="form-body">
+ <h2 id="form-h2">Formulario de cadastro</h2>
+
+        <form>
+            <div>
+                <label for="nome">Nome do produto:</label>
+                <input type="nome" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" name="preco" pattern="^\d+(\.\d{1,2})?$" placeholder="Exemplo: R$1000.00">
+            </div>
+            <div>
+                <label for="arquivo">Selecione um arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </div>
+            <button id="form-button" type="submit">Enviar</button>
+        </form>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: white;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+        section {
+            height: 100vh;
+            background-color: white;
+            padding-top: 80px;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: whitesmoke;
+            z-index: 1000; 
+        }
+    </style>
+</head>
+<body id="conteudo">
+    <header id="header">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Placeholder</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Formulario</a>
+                        </li>
+                        <button id="login-button" class="btn" type="button">Login</button>
+                    </ul>
+                </nav>  
+            </div>
+        </div>
+    </header>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-primary" id="btn-search" type="submit">Pesquisar</button>
+            </form>          
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <section id="inicio">
+            <div class="container">
+            <h2 id="titulo_inicio">Inicio</h2>
+        </div>
+            <body>
+                <div class="container">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img class="d-block w-100" src="https://via.placeholder.com/320x220">
+                                <div class="carousel-caption">
+                                    <h2>Texto do item 1</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="https://via.placeholder.com/320x220">
+                                <div class="carousel-caption">
+                                    <h2>Texto do item 2</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block w-100" src="https://via.placeholder.com/320x220">
+                                <div class="carousel-caption">
+                                    <h2>Texto do item 3</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" class="active" data-bs-target="#carouselExample" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+            <h2 id="titulo_produtos">Produtos</h2>
+            </div>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Aba1</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Aba2</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Aba3</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 1</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 1</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 1</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 1</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 1</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 1</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 2</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <article class="card">
+                                    <img src="https://via.placeholder.com/320x220">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nome do produto</h4>
+                                        <p class="card-text">Descrição do card 3</p>
+                                        <p class="price">R$ 50,00</p>
+                                        <a href="store.html" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
